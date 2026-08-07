@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alraya Admin Login</title>
+    <link rel="stylesheet" href="styles.css?v=38">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(1, 2, 4, 0.9), rgba(1, 2, 4, 0.95)), url('assets/store_background.webp');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            font-family: var(--font-main);
+            margin: 0;
+        }
+
+        .login-box {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--accent-gold);
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-box img {
+            width: 80px;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-box input {
+            padding: 1rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: #000;
+            color: #fff;
+            font-family: var(--font-main);
+            box-sizing: border-box;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .login-box input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .login-box button {
+            padding: 1rem;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            background: var(--accent-gold);
+            color: #000;
+            font-weight: bold;
+            font-family: var(--font-main);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .login-box button:hover {
+            background: #e6b84d;
+            box-shadow: 0 0 15px rgba(210, 168, 68, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <a href="index.html">
+            <img src="assets/brand_logo.webp" alt="Alraya">
+        </a>
+        <h2 style="color: var(--accent-gold); margin-top: 0; margin-bottom: 2rem; font-size: 1.8rem;">Admin Access</h2>
+        <input type="password" id="admin-pass" placeholder="Enter Password" onkeypress="handleEnter(event)">
+        <button onclick="login()">
+            <span class="material-icons-outlined">login</span> Login
+        </button>
+        <p id="error-msg" style="color: #ff5555; display: none; margin-top: 1.5rem; font-size: 0.95rem;">Incorrect
+            Password!</p>
+    </div>
+
+    <script>
+        // If already logged in, redirect to dashboard
+        if (localStorage.getItem('isAdmin') === 'true') {
+            window.location.href = 'Dashboard-Panel.html';
+        }
+
+        function handleEnter(e) {
+            if (e.key === 'Enter') {
+                login();
+            }
+        }
+
+        function login() {
+            const pass = document.getElementById('admin-pass').value;
+            if (pass === 'Alraya2026') {
+                localStorage.setItem('isAdmin', 'true');
+                window.location.href = 'Dashboard-Panel.html';
+            } else {
+                const errorMsg = document.getElementById('error-msg');
+                errorMsg.style.display = 'block';
+                // Shake effect visually if desired
+                const box = document.querySelector('.login-box');
+                box.style.transform = 'translateX(-10px)';
+                setTimeout(() => box.style.transform = 'translateX(10px)', 100);
+                setTimeout(() => box.style.transform = 'translateX(-10px)', 200);
+                setTimeout(() => box.style.transform = 'translateX(0)', 300);
+            }
+        }
+    </script>
+</body>
+
+</html>

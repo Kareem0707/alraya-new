@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEWK73XSZK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NEWK73XSZK');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Alraya Lighting Systems: A Journey of Light from Foundation to Beauty. Since our inception in 2022, Alraya has specialized in crafting the integrated details of your home. We are with you from the beginning, providing the finest foundation and electrical supplies (from wires, switches, and transformers), leading up to the most exquisite decorative lighting units (chandeliers, magnetic profiles, and sconces).">
+    <meta property="og:title" content="Alraya Lighting | Elegance In Every Glow">
+    <meta property="og:description"
+        content="Alraya Lighting Systems: A Journey of Light from Foundation to Beauty. Since our inception in 2022, Alraya has specialized in crafting the integrated details of your home. We are with you from the beginning, providing the finest foundation and electrical supplies (from wires, switches, and transformers), leading up to the most exquisite decorative lighting units (chandeliers, magnetic profiles, and sconces).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alraya-lighting.com/">
+    <title>Alraya Lighting | Elegance In Every Glow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons for simple icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialized with User's Public Key
+            emailjs.init("BBJ2EXjqpHV4aqIfR");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Ambient Lighting Background -->
+    <div id="ambient-lights">
+        <div class="ambient-light-orb orb-1"></div>
+        <div class="ambient-light-orb orb-2"></div>
+        <div class="ambient-light-orb orb-3"></div>
+    </div>
+
+    <!-- Intro Animation Overlay -->
+    <div id="intro-overlay">
+        <svg id="intro-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Cables -->
+            <path id="cable-path-left" d="" stroke="#d2a844" stroke-width="6" fill="none" />
+            <path id="cable-path-right" d="" stroke="#d2a844" stroke-width="6" fill="none" />
+
+            <!-- Plugs -->
+            <g id="plug-grp-left">
+                <!-- Male Plug Body -->
+                <rect x="-30" y="-20" width="30" height="40" rx="4" fill="#d2a844" />
+                <!-- Prongs -->
+                <rect x="0" y="-12" width="10" height="6" fill="#bf953f" />
+                <rect x="0" y="6" width="10" height="6" fill="#bf953f" />
+            </g>
+
+            <g id="plug-grp-right">
+                <!-- Female Plug Body -->
+                <rect x="0" y="-20" width="30" height="40" rx="4" fill="#d2a844" />
+                <!-- Slots (Dark lines to look like holes) -->
+                <rect x="2" y="-12" width="8" height="6" fill="#3a3a3a" />
+                <rect x="2" y="6" width="8" height="6" fill="#3a3a3a" />
+            </g>
+
+            <!-- Connection Spark -->
+            <circle id="intro-spark" cx="50%" cy="50%" r="0" fill="#fff" />
+        </svg>
+    </div>
+
+    <!-- Main Application -->
+    <div id="app">
+        <nav>
+            <!-- Logo on Left -->
+            <!-- Logo on Left -->
+            <a href="#home" onclick="renderHome()">
+                <img src="assets/brand_logo.webp" alt="Alraya Brand Logo" class="nav-logo">
+            </a>
+
+            <!-- Language Switcher - Centered on Mobile -->
+            <div id="lang-switch" class="light-switch-container" onclick="toggleLanguage()">
+                <div class="light-switch-toggle">
+                    <span class="switch-label text-left">EN</span>
+                    <span class="switch-label text-right">AR</span>
+                </div>
+            </div>
+
+            <!-- Mobile Burger Menu -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span class="material-icons-outlined" style="font-size: 2rem; color: #fff;">menu</span>
+            </div>
+
+            <!-- Links on Right -->
+            <ul class="nav-links">
+
+                <li><a href="#home" onclick="renderHome()" data-i18n="nav_home">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><span data-i18n="nav_fixtures">Lighting Fixtures</span>
+                        <span class="material-icons-outlined"
+                            style="vertical-align: middle; font-size: 1.2em;">arrow_drop_down</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showProducts('Lampshades'); return false;"
+                            data-i18n="cat_lampshades">Lampshades</a>
+                        <a href="#" onclick="showProducts('Pendant Lights'); return false;"
+                            data-i18n="cat_pendant">Pendant Lights</a>
+                        <a href="#" onclick="showProducts('Wall Sconce'); return false;" data-i18n="cat_wall">Wall
+                            Sconce</a>
+                        <a href="#" onclick="showProducts('Spotlights'); return false;"
+                            data-i18n="cat_spot">Spotlights</a>
+                        <a href="#" onclick="showProducts('Floor Lamp'); return false;" data-i18n="cat_floor">Floor
+                            Lamp</a>
+                        <a href="#" onclick="showProducts('Track Lights'); return false;" data-i18n="cat_track">Track
+                            Lights</a>
+                        <a href="#" onclick="showProducts('Outdoor Pillar Lights'); return false;"
+                            data-i18n="cat_pillar">Outdoor Pillar Lights</a>
+                        <a href="#" onclick="showProducts('Garden Spike Lights'); return false;"
+                            data-i18n="cat_spike">Garden Spike Lights</a>
+                    </div>
+                </li>
+                <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero">
+            <div class="campaign-badge">
+                <img src="assets/brand_logo.webp" alt="Alraya Brand Logo" class="campaign-logo-full">
+            </div>
+
+            <p data-i18n="hero_slogan">Elegance In Every Glow.</p>
+            <a href="#services" data-i18n="hero_cta"
+                style="border: 1px solid var(--accent-gold); padding: 1rem 2rem; color: var(--accent-gold); border-radius: 50px; transition: 0.3s; margin-top: 2rem;">Explore
+                Collection</a>
+        </header>
+
+        <section id="services" class="services">
+            <h2 class="section-title" data-i18n="section_fixtures">LIGHTING FIXTURES</h2>
+            <!-- Indoor Lighting Group -->
+
+            <!-- Card 1: Lampshades -->
+            <div class="service-card" onclick="showProducts('Lampshades')">
+                <div class="service-image" style="background-image: url('assets/552.webp');"></div>
+                <h3 data-i18n="cat_lampshades">Lampshades</h3>
+            </div>
+
+
+
+            <!-- Card 2: Pendant Lights -->
+            <div class="service-card" onclick="showProducts('Pendant Lights')">
+                <div class="service-image" style="background-image: url('assets/pendant.webp');"></div>
+                <h3 data-i18n="cat_pendant">Pendant Lights</h3>
+            </div>
+
+            <!-- Card 3: Wall Sconce -->
+            <div class="service-card" onclick="showProducts('Wall Sconce')">
+                <div class="service-image" style="background-image: url('assets/451.webp');"></div>
+                <h3 data-i18n="cat_wall">Wall Sconce</h3>
+            </div>
+
+            <!-- Card 4: Spotlights -->
+            <div class="service-card" onclick="showProducts('Spotlights')">
+                <div class="service-image" style="background-image: url('assets/spotlight.webp');"></div>
+                <h3 data-i18n="cat_spot">Spotlights</h3>
+            </div>
+
+            <!-- Card 7: Floor Lamp -->
+            <div class="service-card" onclick="showProducts('Floor Lamp')">
+                <div class="service-image" style="background-image: url('assets/785.webp');"></div>
+                <h3 data-i18n="cat_floor">Floor Lamp</h3>
+            </div>
+
+            <!-- Card 8: Track Lights -->
+            <div class="service-card" onclick="showProducts('Track Lights')">
+                <div class="service-image" style="background-image: url('assets/14537.webp');"></div>
+                <h3 data-i18n="cat_track">Track Lights</h3>
+            </div>
+
+            <!-- Outdoor Lighting Group -->
+
+            <!-- Card 5: Outdoor Pillar Lights -->
+            <div class="service-card" onclick="showProducts('Outdoor Pillar Lights')">
+                <div class="service-image" style="background-image: url('assets/outdoor_pillar.webp');"></div>
+                <h3 data-i18n="cat_pillar">Outdoor Pillar Lights</h3>
+            </div>
+
+            <!-- Card 6: Garden Spike Lights -->
+            <div class="service-card" onclick="showProducts('Garden Spike Lights')">
+                <div class="service-image" style="background-image: url('assets/garden_spike.webp');"></div>
+                <h3 data-i18n="cat_spike">Garden Spike Lights</h3>
+            </div>
+        </section>
+        <section id="partners-section" class="partners-container">
+            <h2 class="section-title" data-i18n="partners_title">Our Partners</h2>
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <!-- Partner Images (Replicated for infinite loop) -->
+                    <!-- Placeholder Images - User will provide real ones -->
+                    <img src="assets/brand_logo.webp" alt="Partner 1" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 2" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 3" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 4" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 5" class="partner-logo">
+                    <!-- Duplicated set for seamless loop -->
+                    <img src="assets/brand_logo.webp" alt="Partner 1" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 2" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 3" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 4" class="partner-logo">
+                    <img src="assets/brand_logo.webp" alt="Partner 5" class="partner-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Product Grid Section -->
+        <section id="products-section" style="display:none; padding: 10rem 4rem 4rem 4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 id="category-title" style="color: var(--accent-gold); font-size: 2rem;">Category Name</h2>
+                <button onclick="hideProducts()"
+                    style="background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-icons-outlined">arrow_back</span> <span data-i18n="back_to_cats">Back to
+                        Categories</span>
+                </button>
+            </div>
+            <div id="product-grid" class="product-grid class-active"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Products injected here -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-i18n="nav_about">About Us</h2>
+            <div class="about-content">
+                <p class="about-text" dir="rtl" data-i18n="about_text">
+                    الراية لأنظمة الأضاءة رحلة الضوء من التأسيس إلى الجمال
+                    منذ انطلاقنا في 2022، تخصصت الراية في رسم تفاصيل منزلك المتكاملة. نحن معك من البداية، نوفر أجود
+                    مستلزمات التأسيس والكهرباء (من أسلاك ومفاتيح وترانسات)، وصولاً إلى أرقى وحدات الإضاءة الديكورية (من
+                    نجف، بروفايل ماجنيتيك، وأباليك).
+
+                    لماذا تختارنا
+                    لأننا نجمع لك بين أقوى الماركات العالمية والأسعار التنافسية، لنضمن لك بيتاً يجمع بين الأمان العصري
+                    والفخامة البصرية.
+
+                    في الراية، مهمتنا أن نجعل كل زاوية في بيتك تنبض بالرقي، تحت شعارنا الدائم:
+                    Elegance In Every Glow</p>
+
+                <div class="about-features" dir="rtl">
+                    <div class="feature-box">
+                        <span class="material-icons-outlined feature-icon">workspace_premium</span>
+                        <h3 data-i18n="val_money">قيمة مقابل سعر</h3>
+                    </div>
+                    <div class="feature-box">
+                        <span class="material-icons-outlined feature-icon">engineering</span>
+                        <h3 data-i18n="after_sales">خدمة ما بعد البيع</h3>
+                    </div>
+                </div>
+
+                <div class="about-decoration"></div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="contact-card">
+                <!-- Left Side: Image -->
+                <div class="contact-image-container">
+                    <img src="assets/contact_us.webp" alt="Contact Us" class="contact-image-full">
+                </div>
+
+                <!-- Right Side: Info -->
+                <div class="contact-info-container">
+                    <h2 class="contact-title" data-i18n="nav_contact">Contact Us</h2>
+
+                    <p
+                        style="color: var(--accent-gold); font-size: 1.1rem; margin-top: -10px; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <span class="material-icons-outlined" style="font-size: 1.2rem;">schedule</span>
+                        <span data-i18n="working_hours">Working Hours: 10AM - 10PM</span>
+                        <span id="store-status"
+                            style="font-weight: bold; font-size: 0.85rem; padding: 3px 8px; border-radius: 20px; color: #fff; transition: background-color 0.3s;"></span>
+                    </p>
+
+                    <div class="contact-list">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1886HLH3hF/" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </div>
+                            <span>Alraya Lighting</span>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/alrayaforlightingsystem?igsh=dGIzMzVwMGdyYzYy"
+                            target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <span>alrayaforlightingsystem</span>
+                        </a>
+
+                        <!-- WhatsApp (1) -->
+                        <a href="https://wa.me/201091732255?text=Hello,%20I%20am%20contacting%20you%20via%20your%20website."
+                            target="_blank" class="contact-item" onclick="notifyAdmin('General Contact')">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>01091732255</span>
+                        </a>
+
+                        <!-- WhatsApp (2) -->
+                        <a href="https://wa.me/201099449745?text=Hello,%20I%20am%20contacting%20you%20via%20your%20website."
+                            target="_blank" class="contact-item" onclick="notifyAdmin('General Contact')">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>01099449745</span>
+                        </a>
+
+                        <!-- Gmail -->
+                        <a href="mailto:alrayalightning@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-icons-outlined" style="font-size: 1.2rem;">email</span>
+                            </div>
+                            <span>alrayalightning@gmail.com</span>
+                        </a>
+
+                        <!-- Location -->
+                        <a href="https://maps.app.goo.gl/mY1mSXEn8JaL7yz46" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-icons-outlined" style="font-size: 1.2rem;">location_on</span>
+                            </div>
+                            <span style="font-size: 0.95rem;" data-i18n="footer_address">Al-Sheikh Zayed, Karma4 Mall
+                                behind Alahly Club</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-copy">
+                &copy; 2026 Alraya Lighting. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="product-detail">
+        <button onclick="closeModal()"
+            style="position: absolute; top: 2rem; right: 2rem; background: none; border: none; color: #fff; cursor: pointer; z-index: 10;">
+            <span class="material-icons-outlined" style="font-size: 2rem;">close</span>
+        </button>
+        <div class="detail-content">
+            <div id="modal-image" class="detail-image"
+                style="background-image: url('https://placehold.co/600x800/111/d2a844?text=Product');">
+                <div class="detail-badge">
+                    <span id="modal-price">$XXX</span>
+                </div>
+            </div>
+            <div class="detail-info">
+                <h2 id="modal-title" style="font-size: 3rem; margin-bottom: 1rem; color: var(--accent-gold);">Product
+                </h2>
+                <p id="modal-desc" style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">Full
+                    description...</p>
+                <div style="margin-bottom: 2rem;">
+                    <strong style="color: #fff;">Warranty:</strong> <span id="modal-warranty"
+                        style="color: var(--text-muted);">2 Years</span>
+                </div>
+                <a href="#" id="modal-whatsapp" class="whatsapp-cta">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Order on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+
+</html>

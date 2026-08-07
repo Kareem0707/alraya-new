@@ -1,0 +1,1059 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEWK73XSZK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NEWK73XSZK');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '769999999999999'); // Replace with actual Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=769999999999999&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="meta-desc"
+        content="Alraya Lighting Systems: Find the finest decorative lighting, chandeliers (نجف), pendants (دلايات), and electrical supplies in Egypt. Elegance in every glow. الراية لأنظمة الإضاءة: أرقى تشكيلة من النجف والدلايات ووحدات الإضاءة الديكورية ومستلزمات التأسيس.">
+    <meta property="og:title" id="meta-og-title" content="Alraya Lighting | الراية للإضاءة">
+    <meta property="og:description" id="meta-og-desc"
+        content="Alraya Lighting Systems: Find the finest decorative lighting, chandeliers (نجف), pendants (دلايات), and electrical supplies in Egypt. Elegance in every glow. الراية لأنظمة الإضاءة: أرقى تشكيلة من النجف والدلايات ووحدات الإضاءة الديكورية.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alraya-lighting.com/">
+    <meta name="keywords"
+        content="الراية, الراية للاضاءة, الراية لأنظمة الاضاءة, اضاءة, الرايه, وحدات اضاءة, اضواء, ديكور, اضاءة ديكورية, alraya, alraya for lighting, alraya lighting, alraya lighting system, pendant, Lighting Fixtures, Lampshades, Wall Sconce, Spotlights, Floor Lamp, Track Lights, Outdoor Pillar Lights, Cover Frame, Elegance, Lighting Fixtures">
+    <title>Alraya Lighting | Elegance In Every Glow</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css?v=44">
+    <link rel="icon" href="https://alrayalighting.com/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons for simple icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialized with User's Public Key
+            emailjs.init("BBJ2EXjqpHV4aqIfR");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Ambient Lighting Background -->
+    <div id="ambient-lights">
+        <div class="ambient-light-orb orb-1"></div>
+        <div class="ambient-light-orb orb-2"></div>
+        <div class="ambient-light-orb orb-3"></div>
+    </div>
+
+    <!-- Intro Animation Overlay -->
+    <div id="intro-overlay">
+        <svg id="intro-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Cables -->
+            <path id="cable-path-left" d="" stroke="#d2a844" stroke-width="6" fill="none" />
+            <path id="cable-path-right" d="" stroke="#d2a844" stroke-width="6" fill="none" />
+
+            <!-- Plugs -->
+            <g id="plug-grp-left">
+                <!-- Male Plug Body -->
+                <rect x="-30" y="-20" width="30" height="40" rx="4" fill="#d2a844" />
+                <!-- Prongs -->
+                <rect x="0" y="-12" width="10" height="6" fill="#bf953f" />
+                <rect x="0" y="6" width="10" height="6" fill="#bf953f" />
+            </g>
+
+            <g id="plug-grp-right">
+                <!-- Female Plug Body -->
+                <rect x="0" y="-20" width="30" height="40" rx="4" fill="#d2a844" />
+                <!-- Slots (Dark lines to look like holes) -->
+                <rect x="2" y="-12" width="8" height="6" fill="#3a3a3a" />
+                <rect x="2" y="6" width="8" height="6" fill="#3a3a3a" />
+            </g>
+
+            <!-- Connection Spark -->
+            <circle id="intro-spark" cx="50%" cy="50%" r="0" fill="#fff" />
+        </svg>
+    </div>
+
+    <!-- Main Application -->
+    <div id="app">
+        <nav>
+            <!-- Left Group: Logo, Language, Favorites -->
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <!-- Logo -->
+                <a href="#home" onclick="renderHome()">
+                    <img src="assets/brand_logo.webp" alt="Alraya Brand Logo" class="nav-logo">
+                </a>
+
+                <!-- Language Switcher -->
+                <div id="lang-switch" class="light-switch-container" onclick="toggleLanguage()">
+                    <div class="light-switch-toggle">
+                        <span class="switch-label text-left">EN</span>
+                        <span class="switch-label text-right">AR</span>
+                    </div>
+                </div>
+
+                <!-- Favorites Icon -->
+                <a href="#" onclick="showFavorites(); return false;"
+                    style="color: var(--accent-gold); display: flex; align-items: center; text-decoration: none;"
+                    title="Favorites">
+                    <span class="material-icons-outlined" style="font-size: 1.8rem; transition: color 0.3s;"
+                        onmouseover="this.style.color='#fff'"
+                        onmouseout="this.style.color='var(--accent-gold)'">favorite_border</span>
+                </a>
+
+                <!-- Track Order Icon -->
+                <a href="#" onclick="showOrderTracker(); return false;"
+                    style="color: var(--accent-gold); display: flex; align-items: center; text-decoration: none;"
+                    title="Track Order">
+                    <span class="material-icons-outlined" style="font-size: 1.8rem; transition: color 0.3s;"
+                        onmouseover="this.style.color='#fff'"
+                        onmouseout="this.style.color='var(--accent-gold)'">local_shipping</span>
+                </a>
+
+                <!-- Cart Icon -->
+                <a href="#" onclick="showCart(); return false;"
+                    style="color: var(--accent-gold); display: flex; align-items: center; text-decoration: none; position: relative;"
+                    title="Cart">
+                    <span class="material-icons-outlined" style="font-size: 1.8rem; transition: color 0.3s;"
+                        onmouseover="this.style.color='#fff'"
+                        onmouseout="this.style.color='var(--accent-gold)'">shopping_cart</span>
+                    <span id="cart-count"
+                        style="position: absolute; top: -5px; right: -5px; background: var(--accent-gold); color: #000; font-size: 0.7rem; font-weight: bold; padding: 2px 5px; border-radius: 50%; display: none;">0</span>
+                </a>
+
+                <!-- Admin Dashboard Icon (Hidden by Default) -->
+                <a href="#" id="admin-panel-link"
+                    style="display: none; color: var(--accent-gold); align-items: center; text-decoration: none;"
+                    title="Admin Dashboard">
+                    <span class="material-icons-outlined" style="font-size: 1.8rem; transition: color 0.3s;"
+                        onmouseover="this.style.color='#fff'"
+                        onmouseout="this.style.color='var(--accent-gold)'">admin_panel_settings</span>
+                </a>
+            </div>
+
+            <!-- Mobile Burger Menu -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span class="material-icons-outlined" style="font-size: 2rem; color: #fff;">menu</span>
+            </div>
+
+            <!-- Links on Right -->
+            <ul class="nav-links">
+
+                <li><a href="#home" onclick="renderHome()" data-i18n="nav_home">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><span data-i18n="nav_fixtures">Lighting Fixtures</span>
+                        <span class="material-icons-outlined"
+                            style="vertical-align: middle; font-size: 1.2em;">arrow_drop_down</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showProducts('Lampshades'); return false;"
+                            data-i18n="cat_lampshades">Lampshades</a>
+                        <a href="#" onclick="showProducts('Pendant Lights'); return false;"
+                            data-i18n="cat_pendant">Pendant Lights</a>
+                        <a href="#" onclick="showProducts('Wall Sconce'); return false;" data-i18n="cat_wall">Wall
+                            Sconce</a>
+                        <a href="#" onclick="showProducts('Spotlights'); return false;"
+                            data-i18n="cat_spot">Spotlights</a>
+                        <a href="#" onclick="showProducts('Floor Lamp'); return false;" data-i18n="cat_floor">Floor
+                            Lamp</a>
+                        <a href="#" onclick="showProducts('Track Lights'); return false;" data-i18n="cat_track">Track
+                            Lights</a>
+                        <a href="#" onclick="showProducts('Outdoor Pillar Lights'); return false;"
+                            data-i18n="cat_pillar">Outdoor Pillar Lights</a>
+                        <a href="#" onclick="showProducts('Garden Spike Lights'); return false;"
+                            data-i18n="cat_spike">Garden Spike Lights</a>
+                        <a href="#" onclick="showProducts('Panels'); return false;" data-i18n="cat_panels">Panels</a>
+                        <a href="#" onclick="showProducts('Flashlight'); return false;"
+                            data-i18n="cat_flashlight">Flashlight</a>
+                        <a href="#" onclick="showProducts('Profile Strip'); return false;"
+                            data-i18n="cat_profile">Profile Strip</a>
+                        <a href="#" onclick="showProducts('Staircase Lighting'); return false;"
+                            data-i18n="cat_staircase">Staircase Lighting</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="showProducts('Cover Frame'); return false;" data-i18n="cat_cover_frame">Cover
+                        Frame</a></li>
+
+                <!-- Electrical Supplies Dropdown -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><span data-i18n="nav_electrical">Electrical
+                            Supplies</span>
+                        <span class="material-icons-outlined"
+                            style="vertical-align: middle; font-size: 1.2em;">arrow_drop_down</span></a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showProducts('Power Strips'); return false;"
+                            data-i18n="cat_power_strips">Power Strips</a>
+                        <a href="#" onclick="showProducts('Power Supply Adapter'); return false;"
+                            data-i18n="cat_transformers">Power Supply Adapter</a>
+                        <a href="#" onclick="showProducts('PVC Tape'); return false;" data-i18n="cat_tape">PVC Tape</a>
+                        <a href="#" onclick="showProducts('Plugs'); return false;" data-i18n="cat_plugs">Plugs</a>
+                        <a href="#" onclick="showProducts('Lamps'); return false;" data-i18n="cat_lamps">Lamps</a>
+                        <a href="#" onclick="showProducts('LED Strip Light'); return false;"
+                            data-i18n="cat_led_strip">LED Strip Light</a>
+                        <a href="#" onclick="showProducts('Extension Cord'); return false;"
+                            data-i18n="cat_extension">Extension Cord</a>
+                        <a href="#" onclick="showProducts('Cable Roll'); return false;" data-i18n="cat_cable_roll">Cable
+                            Roll</a>
+                        <a href="#" onclick="showProducts('Mobile Accessories'); return false;"
+                            data-i18n="cat_mobile_acc">Mobile Accessories</a>
+                        <a href="#" onclick="showProducts('Led strip PVC'); return false;"
+                            data-i18n="cat_led_strip_pvc">Led strip PVC</a>
+                    </div>
+                </li>
+                <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                <li><a href="#partners-ui" data-i18n="nav_partners">Our Partners</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero">
+            <h1 class="visually-hidden">Alraya Lighting Systems - الراية لأنظمة الاضاءة</h1>
+            <div class="campaign-badge">
+                <img src="assets/brand_logo.webp" alt="Alraya Brand Logo" class="campaign-logo-full">
+            </div>
+
+            <p data-i18n="hero_slogan">Elegance In Every Glow.</p>
+            <a href="#services" data-i18n="hero_cta"
+                style="border: 1px solid var(--accent-gold); padding: 1rem 2rem; color: var(--accent-gold); border-radius: 50px; transition: 0.3s; margin-top: 2rem;">Explore
+                Collection</a>
+        </header>
+
+        <section id="services" class="services">
+            <div class="fixtures-grid">
+                <h2 class="section-title" data-i18n="section_fixtures">LIGHTING FIXTURES</h2>
+                <!-- Indoor Lighting Group -->
+
+                <!-- Card 1: Lampshades -->
+                <div class="service-card" onclick="showProducts('Lampshades')">
+                    <div class="service-image" style="background-image: url('assets/552.webp');"></div>
+                    <h3 data-i18n="cat_lampshades">Lampshades</h3>
+                </div>
+
+
+                <!-- Card 2: Pendant Lights -->
+                <div class="service-card" onclick="showProducts('Pendant Lights')">
+                    <div class="service-image" style="background-image: url('assets/pendant.webp');"></div>
+                    <h3 data-i18n="cat_pendant">Pendant Lights</h3>
+                </div>
+
+                <!-- Card 3: Wall Sconce -->
+                <div class="service-card" onclick="showProducts('Wall Sconce')">
+                    <div class="service-image" style="background-image: url('assets/451.webp');"></div>
+                    <h3 data-i18n="cat_wall">Wall Sconce</h3>
+                </div>
+
+                <!-- Card 4: Spotlights -->
+                <div class="service-card" onclick="showProducts('Spotlights')">
+                    <div class="service-image" style="background-image: url('assets/spotlight.webp');"></div>
+                    <h3 data-i18n="cat_spot">Spotlights</h3>
+                </div>
+
+                <!-- Card 7: Floor Lamp -->
+                <div class="service-card" onclick="showProducts('Floor Lamp')">
+                    <div class="service-image" style="background-image: url('assets/785.webp');"></div>
+                    <h3 data-i18n="cat_floor">Floor Lamp</h3>
+                </div>
+
+                <!-- Card 8: Track Lights -->
+                <div class="service-card" onclick="showProducts('Track Lights')">
+                    <div class="service-image" style="background-image: url('assets/14537.webp');"></div>
+                    <h3 data-i18n="cat_track">Track Lights</h3>
+                </div>
+
+                <!-- Outdoor Lighting Group -->
+
+                <!-- Card 5: Outdoor Pillar Lights -->
+                <div class="service-card" onclick="showProducts('Outdoor Pillar Lights')">
+                    <div class="service-image" style="background-image: url('assets/outdoor_pillar.webp');"></div>
+                    <h3 data-i18n="cat_pillar">Outdoor Pillar Lights</h3>
+                </div>
+
+                <!-- Card 6: Garden Spike Lights -->
+                <div class="service-card" onclick="showProducts('Garden Spike Lights')">
+                    <div class="service-image" style="background-image: url('assets/garden_spike.webp');"></div>
+                    <h3 data-i18n="cat_spike">Garden Spike Lights</h3>
+                </div>
+
+                <!-- Card 9: Panels -->
+                <div class="service-card" onclick="showProducts('Panels')">
+                    <div class="service-image" style="background-image: url('assets/904.webp');"></div>
+                    <h3 data-i18n="cat_panels">Panels</h3>
+                </div>
+
+                <!-- Card 10: Flashlight -->
+                <div class="service-card" onclick="showProducts('Flashlight')">
+                    <div class="service-image" style="background-image: url('assets/903.webp');"></div>
+                    <h3 data-i18n="cat_flashlight">Flashlight</h3>
+                </div>
+
+                <!-- Card 11: Profile Strip -->
+                <div class="service-card" onclick="showProducts('Profile Strip')">
+                    <div class="service-image" style="background-image: url('assets/b00.webp');">
+                    </div>
+                    <h3 data-i18n="cat_profile">Profile Strip</h3>
+                </div>
+
+                <!-- Card 12: Staircase Lighting -->
+                <div class="service-card" onclick="showProducts('Staircase Lighting')">
+                    <div class="service-image" style="background-image: url('assets/a04.webp');">
+                    </div>
+                    <h3 data-i18n="cat_staircase">Staircase Lighting</h3>
+                </div>
+            </div>
+
+            <!-- Electrical Supplies Section Header -->
+            <h2 class="section-title" data-i18n="section_electrical" style="margin-top: 4rem;">ELECTRICAL SUPPLIES</h2>
+
+            <div class="electrical-grid">
+                <!-- Power Strips -->
+                <div class="service-card electrical-card" onclick="showProducts('Power Strips')">
+                    <div class="service-image"
+                        style="background-image: url('assets/720.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_power_strips">Power Strips</h3>
+                </div>
+
+                <!-- Power Supply Adapter -->
+                <div class="service-card electrical-card" onclick="showProducts('Power Supply Adapter')">
+                    <div class="service-image"
+                        style="background-image: url('assets/723.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_transformers">Power Supply Adapter</h3>
+                </div>
+
+                <!-- PVC Tape -->
+                <div class="service-card electrical-card" onclick="showProducts('PVC Tape')">
+                    <div class="service-image"
+                        style="background-image: url('assets/711.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_tape">PVC Tape</h3>
+                </div>
+
+                <!-- Plugs -->
+                <div class="service-card electrical-card" onclick="showProducts('Plugs')">
+                    <div class="service-image"
+                        style="background-image: url('assets/708.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_plugs">Plugs</h3>
+                </div>
+
+                <!-- Lamps (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('Lamps')">
+                    <div class="service-image"
+                        style="background-image: url('assets/603.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_lamps">Lamps</h3>
+                </div>
+
+                <!-- LED Strip Light (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('LED Strip Light')">
+                    <div class="service-image"
+                        style="background-image: url('assets/027.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_led_strip">LED Strip Light</h3>
+                </div>
+
+                <!-- Extension Cord (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('Extension Cord')">
+                    <div class="service-image"
+                        style="background-image: url('assets/700.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_extension">Extension Cord</h3>
+                </div>
+
+                <!-- Cable Roll (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('Cable Roll')">
+                    <div class="service-image"
+                        style="background-image: url('assets/021.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_cable_roll">Cable Roll</h3>
+                </div>
+
+                <!-- Mobile Accessories (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('Mobile Accessories')">
+                    <div class="service-image"
+                        style="background-image: url('assets/730.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_mobile_acc">Mobile Accessories</h3>
+                </div>
+
+                <!-- Led strip PVC (Hidden Initially) -->
+                <div class="service-card electrical-card hidden-card" onclick="showProducts('Led strip PVC')">
+                    <div class="service-image"
+                        style="background-image: url('assets/738.webp'); background-size: contain; background-repeat: no-repeat;">
+                    </div>
+                    <h3 data-i18n="cat_led_strip_pvc">Led strip PVC</h3>
+                </div>
+            </div>
+
+            <button id="view-more-electrical" onclick="toggleElectricalView()"
+                style="margin-top: 2rem; padding: 0.8rem 2rem; border: 1px solid var(--accent-gold); background: transparent; color: var(--accent-gold); cursor: pointer; border-radius: 5px; font-family: var(--font-main); text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
+                View More
+            </button>
+
+        </section>
+
+        <!-- Cover Frame Section -->
+        <section id="cover-frame-section" class="cover-frame-section" style="padding: 2rem 4rem; position: relative;">
+            <h2 class="section-title" data-i18n="cat_cover_frame">Cover Frame</h2>
+
+            <button onclick="scrollCoverFrames(-1)"
+                style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,0.5); border: none; color: white; border-radius: 50%; padding: 10px; cursor: pointer;">
+                <span class="material-icons">chevron_left</span>
+            </button>
+
+            <div id="cover-frame-grid" class="cover-frame-grid"
+                style="display: flex; gap: 0; overflow-x: auto; padding: 1rem 0; scroll-behavior: smooth; scrollbar-width: none;">
+                <!-- Injected by JS -->
+            </div>
+
+            <button onclick="scrollCoverFrames(1)"
+                style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,0.5); border: none; color: white; border-radius: 50%; padding: 10px; cursor: pointer;">
+                <span class="material-icons">chevron_right</span>
+            </button>
+        </section>
+
+        <!-- Dynamic Product Grid Section -->
+        <section id="products-section" style="display:none; padding: 10rem 4rem 4rem 4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 id="category-title" style="color: var(--accent-gold); font-size: 2rem;">Category Name</h2>
+                <button onclick="hideProducts()"
+                    style="background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-icons-outlined">arrow_back</span> <span data-i18n="back_to_cats">Back to
+                        Categories</span>
+                </button>
+            </div>
+            <div id="product-grid" class="product-grid class-active"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Products injected here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart-section" style="display:none; padding: 10rem 2rem 4rem 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-gold); font-size: 2rem;" data-i18n="cart_title">Shopping Cart</h2>
+                <button onclick="hideCart()"
+                    style="background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-icons-outlined">arrow_back</span> <span data-i18n="back_to_shop">Back to
+                        Shop</span>
+                </button>
+            </div>
+
+            <div id="cart-items" style="display: grid; gap: 1rem; margin-bottom: 2rem;">
+                <!-- Cart items injected here -->
+            </div>
+
+            <div id="cart-summary"
+                style="padding: 1rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #fff;">
+                <h3 style="margin-bottom: 1rem;">Total Items: <span id="cart-total-items">0</span> <span
+                        style="margin: 0 10px; color: var(--text-muted);">|</span> Total Price: <span
+                        id="cart-total-price" style="color: var(--accent-gold);">0 L.E</span></h3>
+                <div class="cart-actions-container">
+                    <button onclick="openCheckoutPage()" class="whatsapp-cta"
+                        style="width: 100%; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; border-radius: 50px; background: var(--accent-gold); color: #000; border: none; margin-top: 0; align-self: center;">
+                        <span class="material-icons-outlined" style="font-size: 1.5rem;">shopping_bag</span>
+                        <span data-i18n="proceed_checkout" style="font-size: 1.1rem; font-weight: bold;">Proceed to
+                            Checkout</span>
+                    </button>
+                    <button onclick="checkoutWhatsApp()" class="whatsapp-cta"
+                        style="width: 100%; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; border-radius: 50px; white-space: nowrap; margin-top: 0; border: none; align-self: center;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                        <span data-i18n="checkout_whatsapp" style="font-size: 1.1rem; font-weight: bold;">Order via
+                            WhatsApp</span>
+                    </button>
+                </div>
+
+                <style>
+                    .cart-actions-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 100%;
+                        max-width: 400px;
+                        margin: 1rem auto 0 auto;
+                    }
+
+                    @media (min-width: 600px) {
+                        .cart-actions-container {
+                            flex-direction: row;
+                            max-width: 800px;
+                            gap: 3rem;
+                            /* يبعدهم عن بعض في الشاشات الكبيرة */
+                        }
+                    }
+                </style>
+            </div>
+        </section>
+
+        <!-- Checkout Page/Section -->
+        <section id="checkout-section" style="display:none; padding: 10rem 2rem 4rem 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-gold); font-size: 2rem;" data-i18n="checkout_title">Complete Order</h2>
+                <button onclick="showCart()"
+                    style="background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-icons-outlined">arrow_back</span> <span data-i18n="back_to_shop">Back to
+                        Cart</span>
+                </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Left: Form -->
+                <div
+                    style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; height: fit-content;">
+                    <form id="checkout-form" onsubmit="submitOrder(event)"
+                        style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <input type="text" id="cust-name" required placeholder="Full Name"
+                                style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);">
+                            <span id="name-error"
+                                style="color: #ff5555; font-size: 0.85rem; display: none; margin-top: 0.3rem;"></span>
+                        </div>
+                        <div>
+                            <input type="tel" id="cust-phone" required placeholder="Phone Number"
+                                style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);">
+                            <span id="phone-error"
+                                style="color: #ff5555; font-size: 0.85rem; display: none; margin-top: 0.3rem;"></span>
+                        </div>
+                        <div>
+                            <textarea id="cust-address" required placeholder="Full Address" rows="3"
+                                style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);"></textarea>
+                            <span id="address-error"
+                                style="color: #ff5555; font-size: 0.85rem; display: none; margin-top: 0.3rem;"></span>
+                        </div>
+                        <div>
+                            <textarea id="cust-notes" placeholder="Order Notes (Optional)" rows="2"
+                                style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);"
+                                data-i18n-placeholder="order_notes"></textarea>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                            <label style="color: #fff; font-weight: bold; margin-bottom: 0.5rem;">Choose Payment
+                                Method</label>
+                            <div class="payment-methods-grid">
+
+                                <label id="pay-cash-option" class="payment-card visa-card"
+                                    style="cursor: pointer; position: relative; margin: 0;">
+                                    <input type="radio" name="cust-payment" value="Visa" required
+                                        style="position: absolute; opacity: 0;">
+                                    <div class="card-content"
+                                        style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 1rem; text-align: center; transition: 0.3s; color: #fff; background: rgba(0,0,0,0.5); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                                        <span class="material-icons-outlined"
+                                            style="font-size: 2.5rem; color: #1A1F71; margin-bottom: 0.5rem;">credit_card</span>
+                                        <div style="font-weight: bold; font-family: sans-serif; font-size: 0.95rem;">
+                                            Visa</div>
+                                    </div>
+                                </label>
+
+                                <label id="pay-insta-option" class="payment-card"
+                                    style="cursor: pointer; position: relative; margin: 0;">
+                                    <input type="radio" name="cust-payment" value="InstaPay" required
+                                        style="position: absolute; opacity: 0;">
+                                    <div class="card-content"
+                                        style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 1rem; text-align: center; transition: 0.3s; color: #fff; background: rgba(0,0,0,0.5); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                                        <span class="material-icons-outlined"
+                                            style="font-size: 2.5rem; color: #FF005E; margin-bottom: 0.5rem;">account_balance</span>
+                                        <div style="font-weight: bold; font-family: sans-serif; font-size: 0.95rem;">
+                                            InstaPay / Bank</div>
+                                    </div>
+                                </label>
+
+                                <label id="pay-voda-option" class="payment-card"
+                                    style="cursor: pointer; position: relative; margin: 0;">
+                                    <input type="radio" name="cust-payment" value="Vodafone Cash" required
+                                        style="position: absolute; opacity: 0;">
+                                    <div class="card-content"
+                                        style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 1rem; text-align: center; transition: 0.3s; color: #fff; background: rgba(0,0,0,0.5); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                                        <span class="material-icons-outlined"
+                                            style="font-size: 2.5rem; color: #E60000; margin-bottom: 0.5rem;">phone_iphone</span>
+                                        <div style="font-weight: bold; font-family: sans-serif; font-size: 0.95rem;">
+                                            Vodafone Cash</div>
+                                    </div>
+                                </label>
+
+                            </div>
+                            <span id="payment-error"
+                                style="color: #ff5555; font-size: 0.85rem; display: none; margin-top: 0.3rem;"></span>
+                        </div>
+
+                        <style>
+                            .payment-methods-grid {
+                                display: grid;
+                                gap: 1rem;
+                                grid-template-columns: 1fr 1fr;
+                            }
+
+                            .visa-card {
+                                grid-column: 1 / -1;
+                            }
+
+                            @media (min-width: 600px) {
+                                .payment-methods-grid {
+                                    grid-template-columns: repeat(3, 1fr);
+                                }
+
+                                .visa-card {
+                                    grid-column: auto;
+                                }
+                            }
+
+                            .payment-card input:checked+.card-content {
+                                border-color: var(--accent-gold) !important;
+                                background: rgba(212, 175, 55, 0.1) !important;
+                            }
+
+                            .payment-card:hover .card-content {
+                                border-color: rgba(255, 255, 255, 0.5);
+                            }
+                        </style>
+                    </form>
+                </div>
+
+                <!-- Right: Order Summary -->
+                <div
+                    style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem; height: fit-content;">
+                    <h3 style="color: #fff; font-size: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 1rem;"
+                        data-i18n="order_summary">Order Summary</h3>
+
+                    <div id="checkout-order-summary-items"
+                        style="display: flex; flex-direction: column; gap: 1rem; max-height: 300px; overflow-y: auto; padding-right: 0.5rem;">
+                        <!-- JS injected Checkout Items -->
+                    </div>
+
+                    <div
+                        style="margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center; color: #fff; font-size: 1.2rem; font-weight: bold;">
+                        <span data-i18n="order_total">Total</span>
+                        <span id="checkout-total-price" style="color: var(--accent-gold);">0 L.E</span>
+                    </div>
+
+                    <button type="submit" form="checkout-form" id="submit-order-btn"
+                        style="width: 100%; background: var(--accent-gold); color: #000; font-weight: bold; font-family: var(--font-main); font-size: 1.1rem; padding: 1rem; border: none; border-radius: 8px; cursor: pointer; margin-top: 1rem; transition: 0.3s;"
+                        data-i18n="confirm_order">Confirm Order</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-i18n="nav_about">About Us</h2>
+            <div class="about-content">
+                <p class="about-text" dir="auto" data-i18n="about_text">
+                    الراية لأنظمة الأضاءة رحلة الضوء من التأسيس إلى الجمال<br>
+                    منذ انطلاقنا في 2022، تخصصت الراية في رسم تفاصيل منزلك المتكاملة. نحن معك من البداية، نوفر أجود
+                    مستلزمات التأسيس والكهرباء (من أسلاك ومفاتيح وترانسات)، وصولاً إلى أرقى وحدات الإضاءة الديكورية (من
+                    نجف، بروفايل ماجنيتيك، وأباليك).<br>
+
+                    <strong>لماذا تختارنا</strong><br>
+                    لأننا نجمع لك بين أقوى الماركات العالمية والأسعار التنافسية، لنضمن لك بيتاً يجمع بين الأمان العصري
+                    والفخامة البصرية.<br>
+
+                    في الراية، مهمتنا أن نجعل كل زاوية في بيتك تنبض بالرقي، تحت شعارنا الدائم:<br>
+                    Elegance In Every Glow
+                </p>
+
+                <div class="about-features" dir="auto">
+                    <div class="feature-box">
+                        <span class="material-icons-outlined feature-icon">workspace_premium</span>
+                        <h3 data-i18n="val_money">قيمة مقابل سعر</h3>
+                    </div>
+                    <div class="feature-box">
+                        <span class="material-icons-outlined feature-icon">engineering</span>
+                        <h3 data-i18n="after_sales">خدمة ما بعد البيع</h3>
+                    </div>
+                </div>
+
+                <div class="about-decoration"></div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews" class="reviews-section" style="padding: 4rem 2rem; background: rgba(20,20,20,0.5);">
+            <h2 class="section-title" data-i18n="customer_reviews">What Our Customers Say</h2>
+            <div id="reviews-container"
+                style="display: flex; gap: 2rem; overflow-x: auto; padding-bottom: 2rem; scrollbar-width: thin; scrollbar-color: var(--accent-gold) transparent; align-items: stretch;">
+                <!-- Reviews injected by JS -->
+            </div>
+            <!-- Add Review Button -->
+            <div style="text-align: center; margin-top: 1rem;">
+                <button onclick="document.getElementById('review-modal').style.display='flex';"
+                    style="background: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 0.8rem 2rem; border-radius: 5px; font-family: var(--font-main); font-size: 1rem; cursor: pointer; transition: all 0.3s ease;"
+                    data-i18n="write_review_btn"
+                    onmouseover="this.style.background='var(--accent-gold)'; this.style.color='#000';"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--accent-gold)';">Write a
+                    Review</button>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners-ui" class="partners-section">
+            <h2 class="section-title" data-i18n="partners_title">Our Partners</h2>
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Partner Logos -->
+                    <div class="partner-item"><img src="assets/partner_schneider.webp" alt="Schneider Electric"
+                            loading="lazy" decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_legrand.webp" alt="Legrand" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_abb.webp" alt="ABB" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_bticino.webp" alt="Bticino" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_philips.webp" alt="Philips" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_elsewedy.webp" alt="Elsewedy" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_elios.webp" alt="Elios" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_ilock.webp" alt="iLock" loading="lazy"
+                            decoding="async"></div>
+
+                    <!-- Duplicate for loop -->
+                    <div class="partner-item"><img src="assets/partner_schneider.webp" alt="Schneider Electric"
+                            loading="lazy" decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_legrand.webp" alt="Legrand" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_abb.webp" alt="ABB" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_bticino.webp" alt="Bticino" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_philips.webp" alt="Philips" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_elsewedy.webp" alt="Elsewedy" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_elios.webp" alt="Elios" loading="lazy"
+                            decoding="async"></div>
+                    <div class="partner-item"><img src="assets/partner_ilock.webp" alt="iLock" loading="lazy"
+                            decoding="async"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="contact-card">
+                <!-- Left Side: Image -->
+                <div class="contact-image-container">
+                    <img src="assets/contact_us.webp" alt="Contact Us" class="contact-image-full">
+                </div>
+
+                <!-- Right Side: Info -->
+                <div class="contact-info-container">
+                    <h2 class="contact-title" data-i18n="nav_contact">Contact Us</h2>
+
+                    <p
+                        style="color: var(--accent-gold); font-size: 1.1rem; margin-top: -10px; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <span class="material-icons-outlined" style="font-size: 1.2rem;">schedule</span>
+                        <span data-i18n="working_hours">Working Hours: 10AM - 10PM</span>
+                        <span id="store-status"
+                            style="font-weight: bold; font-size: 0.85rem; padding: 3px 8px; border-radius: 20px; color: #fff; transition: background-color 0.3s;"></span>
+                    </p>
+
+                    <div class="contact-list">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1886HLH3hF/" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </div>
+                            <span>Alraya Lighting</span>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/alrayaforlightingsystem?igsh=dGIzMzVwMGdyYzYy"
+                            target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <span>alrayaforlightingsystem</span>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@alraya.lighting?_r=1&_t=ZS-94J1JKMlrRC" target="_blank"
+                            class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.39-3.16-3.8-5.46-.4-2.08-.04-4.25 1.05-6.05 1.06-1.78 2.81-3.06 4.88-3.41 1.01-.17 2.05-.12 3.03.11v4.11c-.34-.14-.7-.22-1.06-.27-.66-.08-1.34-.05-1.95.23-1.01.44-1.72 1.4-1.92 2.51-.2 1.09.02 2.24.63 3.12.56.84 1.48 1.39 2.47 1.55 1.06.18 2.18-.01 3.03-.68.82-.62 1.3-1.57 1.43-2.58.07-.63.07-1.27.06-1.91-.04-4.83-.02-9.67-.03-14.5Z" />
+                                </svg>
+                            </div>
+                            <span>Alraya Lighting</span>
+                        </a>
+
+                        <!-- WhatsApp (1) -->
+                        <a href="https://wa.me/201091732255?text=Hello,%20I%20am%20contacting%20you%20via%20your%20website."
+                            target="_blank" class="contact-item" onclick="notifyAdmin('General Contact')">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.506-.669-.514-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414z" />
+                                </svg>
+                            </div>
+                            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 500; letter-spacing: 0.5px;">01091732255</span>
+                                <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); line-height: 1;">Ahmed
+                                    Magdy</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp (2) -->
+                        <a href="https://wa.me/201099449745?text=Hello,%20I%20am%20contacting%20you%20via%20your%20website."
+                            target="_blank" class="contact-item" onclick="notifyAdmin('General Contact')">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.506-.669-.514-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414z" />
+                                </svg>
+                            </div>
+                            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 500; letter-spacing: 0.5px;">01099449745</span>
+                                <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); line-height: 1;">Hady
+                                    Kassab</span>
+                            </div>
+                        </a>
+
+                        <!-- Gmail -->
+                        <a href="mailto:alrayalightning@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-icons-outlined" style="font-size: 1.2rem;">email</span>
+                            </div>
+                            <span>alrayalightning@gmail.com</span>
+                        </a>
+
+                        <!-- Location -->
+                        <a href="https://maps.app.goo.gl/mY1mSXEn8JaL7yz46" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-icons-outlined" style="font-size: 1.2rem;">location_on</span>
+                            </div>
+                            <span style="font-size: 0.95rem;" data-i18n="footer_address">Al-Sheikh Zayed, Karma4 Mall
+                                behind Alahly Club</span>
+                        </a>
+                    </div>
+                    <div class="mobile-only-logo" style="margin-top: 1.5rem;">
+                        <img src="assets/contact_us.webp" alt="Contact Us" style="max-width: 180px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-copy">
+                &copy; 2026 Alraya Lighting. All rights reserved. | Made by Kareem Ahmed
+            </div>
+        </footer>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="product-detail">
+        <button onclick="closeModal()"
+            style="position: absolute; top: 2rem; right: 2rem; background: none; border: none; color: #fff; cursor: pointer; z-index: 10;">
+            <span class="material-icons-outlined" style="font-size: 2rem;">close</span>
+        </button>
+        <div class="detail-content">
+            <div id="modal-image" class="detail-image"
+                style="background-image: url('https://placehold.co/600x800/111/d2a844?text=Product');">
+                <div class="corner-box">
+                    <span id="modal-price"
+                        style="font-size: 1.2rem; font-weight: bold; color: var(--accent-gold);">Price</span>
+                </div>
+            </div>
+            <div class="detail-info">
+                <h2 id="modal-title" style="font-size: 3rem; margin-bottom: 0.5rem; color: var(--accent-gold);">Product
+                </h2>
+
+                <p id="modal-desc" style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">Full
+                    description...</p>
+
+                <!-- Variant Lengths/Wattage Container -->
+                <div id="modal-variants" style="margin-bottom: 2rem; display: none;">
+                    <!-- Variants generated by JS -->
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <strong style="color: #fff;">Warranty:</strong> <span id="modal-warranty"
+                        style="color: var(--text-muted);">2 Years</span>
+                </div>
+
+                <!-- Related Products Section (Injected by JS) -->
+                <div id="modal-related-products"
+                    style="display: none; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                </div>
+
+                <!-- Quantity & Add to Cart Container -->
+                <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; margin-bottom: 2rem;">
+                    <!-- Quantity -->
+                    <div
+                        style="display: flex; align-items: center; border: 1px solid rgba(255,255,255,0.2); border-radius: 5px;">
+                        <button onclick="decrementModalQuantity()"
+                            style="background:none; border:none; color:#fff; width: 30px; cursor: pointer; font-size: 1.2rem;">-</button>
+                        <span id="modal-quantity" style="color: #fff; padding: 0 10px;">1</span>
+                        <button onclick="incrementModalQuantity()"
+                            style="background:none; border:none; color:#fff; width: 30px; cursor: pointer; font-size: 1.2rem;">+</button>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <button id="add-to-cart-btn" class="whatsapp-cta" onclick="addToCartFromModal()"
+                        style="flex-grow: 1; justify-content: center; margin-top: 0; background: var(--accent-gold); color: #000; font-weight: bold;">
+                        <span class="material-icons" style="margin-right: 0.5rem;">add_shopping_cart</span> <span
+                            data-i18n="add_to_cart">Add to Cart</span>
+                    </button>
+                </div>
+
+
+                <div style="display: flex; gap: 1rem; align-items: center; margin-top: 0rem;">
+                    <a href="#" id="modal-whatsapp" class="whatsapp-cta"
+                        style="margin-top: 0; flex-grow: 1; justify-content: center; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                        Order on WhatsApp
+                    </a>
+
+                    <button id="modal-fav-btn"
+                        style="background: #e0e0e0; border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s; flex-shrink: 0;">
+                        <span class="material-icons-outlined"
+                            style="color: #555; font-size: 1.5rem;">favorite_border</span>
+                    </button>
+
+                    <button id="modal-share-btn"
+                        style="background: #e0e0e0; border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s; flex-shrink: 0;">
+                        <span class="material-icons-outlined" style="color: #555; font-size: 1.5rem;">share</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-notification" class="toast-notification">
+        <span class="material-icons-outlined" style="margin-right: 10px;">check_circle</span>
+        <span id="toast-message">Notification</span>
+    </div>
+
+    <!-- Full Screen Image Viewer -->
+    <div id="full-image-viewer" style="display: none;">
+        <span class="close-viewer" onclick="closeImageViewer()">&times;</span>
+        <img id="full-image-content" src="" alt="Full Screen View">
+    </div>
+
+    <!-- Order Tracker Modal -->
+    <div id="tracker-modal" class="checkout-modal-container"
+        style="display: none; align-items: center; justify-content: center; z-index: 10000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); overflow-y: auto;">
+        <div
+            style="background: rgba(20,20,20,0.95); border: 1px solid var(--accent-gold); padding: 2rem; border-radius: 12px; width: 90%; max-width: 500px; position: relative; margin: auto;">
+
+            <button onclick="closeOrderTracker()"
+                style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;">&times;</button>
+
+            <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem; text-align: center; font-size: 1.8rem;"
+                data-i18n="track_order">Track Order</h2>
+
+            <div id="tracker-content" style="color: #fff; font-size: 1rem; line-height: 1.6;">
+                <!-- Filled dynamically -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Write a Review Modal -->
+    <div id="review-modal" class="checkout-modal-container"
+        style="display: none; align-items: center; justify-content: center; z-index: 10000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); overflow-y: auto;">
+        <div
+            style="background: rgba(20,20,20,0.95); border: 1px solid var(--accent-gold); padding: 2rem; border-radius: 12px; width: 90%; max-width: 500px; position: relative; margin: auto;">
+            <button onclick="closeReviewModal()"
+                style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;">&times;</button>
+            <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem; text-align: center; font-size: 1.8rem;"
+                data-i18n="write_review_title">Write a Review</h2>
+            <form id="review-form" onsubmit="submitReview(event)"
+                style="display: flex; flex-direction: column; gap: 1rem;">
+                <div>
+                    <input type="text" id="reviewer-name" required placeholder="Your Name"
+                        data-i18n-placeholder="reviewer_name"
+                        style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);">
+                </div>
+                <div style="display: flex; gap: 0.5rem; justify-content: center; cursor: pointer;" id="star-rating">
+                    <span class="material-icons star-icon" onclick="setRating(1)"
+                        style="color: #555; font-size: 2rem;">star_border</span>
+                    <span class="material-icons star-icon" onclick="setRating(2)"
+                        style="color: #555; font-size: 2rem;">star_border</span>
+                    <span class="material-icons star-icon" onclick="setRating(3)"
+                        style="color: #555; font-size: 2rem;">star_border</span>
+                    <span class="material-icons star-icon" onclick="setRating(4)"
+                        style="color: #555; font-size: 2rem;">star_border</span>
+                    <span class="material-icons star-icon" onclick="setRating(5)"
+                        style="color: #555; font-size: 2rem;">star_border</span>
+                </div>
+                <!-- Hidden input to store rating -->
+                <input type="number" id="review-rating" value="0" required min="1" max="5" style="display:none;">
+
+                <div>
+                    <textarea id="reviewer-text" required placeholder="Your Review" rows="4"
+                        data-i18n-placeholder="reviewer_text"
+                        style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: #000; color: #fff; font-family: var(--font-main);"></textarea>
+                </div>
+                <button type="submit"
+                    style="background: var(--accent-gold); color: #000; font-weight: bold; font-family: var(--font-main); padding: 1rem; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s;"
+                    data-i18n="submit_review_btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Firebase Databases App and Firestore (SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <!-- Our Custom Firebase Integration Hook (Must run before script.js) -->
+    <script src="firebase-db.js?v=44"></script>
+
+    <script src="script.js?v=54"></script>
+    <script>const partners = document.querySelector('.marquee-track'); if (partners && partners.children.length < 20) { partners.innerHTML += partners.innerHTML; }</script>
+</body>
+
+</html>
